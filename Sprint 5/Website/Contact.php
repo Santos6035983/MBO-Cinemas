@@ -23,7 +23,7 @@
     <main>
         <h2>Contact</h2>
         <p>Neem contact met ons op via het onderstaande formulier of via de contactgegevens.</p>
-        <form action="submit_contact.php" method="post">
+        <form action="" method="post">
             <label for="name">Naam:</label>
             <input type="text" id="name" name="name" required>
             
