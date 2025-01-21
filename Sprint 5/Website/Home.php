@@ -16,9 +16,9 @@
         <h1>MBO Cinemas</h1>
         <nav>
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Films.html">Films</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="Films.php">Films</a></li>
+                <li><a href="Contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
