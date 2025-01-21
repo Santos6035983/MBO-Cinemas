@@ -1,9 +1,9 @@
 body {
-  background-color: #2c2c2c; /* Fijne zwart-grijze achtergrond */
+  background-color: #2c2c2c;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #f0f0f0; /* Lichte tekstkleur voor betere leesbaarheid */
+  color: #f0f0f0;
 }
 
 header {
@@ -45,6 +45,7 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 h2, h3 {
@@ -88,17 +89,17 @@ section p {
 }
 
 #film-list article img {
-  width: 150px; /* Vaste breedte */
-  height: 225px; /* Vaste hoogte */
-  object-fit: cover; /* Zorgt ervoor dat de afbeelding de container vult zonder de verhoudingen te verstoren */
+  width: 150px; 
+  height: 225px;
+  object-fit: cover; 
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 #films article img {
-  width: 150px; /* Vaste breedte */
-  height: 225px; /* Vaste hoogte */
-  object-fit: cover; /* Zorgt ervoor dat de afbeelding de container vult zonder de verhoudingen te verstoren */
+  width: 150px; 
+  height: 225px;
+  object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
 }
