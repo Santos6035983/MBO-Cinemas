@@ -9,11 +9,11 @@
             <p>De man met de hoed keert terug voor een laatste avontuur.
                 Indiana Jones and the Dial of Destiny brengt Harrison Ford terug in zijn iconische rol als onze favoriete archeoloog op het scherm.</p>
         </article>
-            <article>
-                <img src="path/to/film5.jpg" alt="Film 5">
-                <h3>Film 5</h3>
-                <p>Beschrijving van Film 5.</p>
-            </article>
+        <article>
+            <img src="images\Films\No Time To Die.png" alt="No Time To Die">
+            <h3>No Time To Die</h3>
+            <p>In de 25ste James Bond-film No Time To Die heeft James Bond zijn turbulente leven als geheim agent achter zich gelaten en leidt hij een rustig bestaan op Jamaica.</p>
+        </article>
             <article>
                 <img src="path/to/film6.jpg" alt="Film 6">
                 <h3>Film 6</h3>
