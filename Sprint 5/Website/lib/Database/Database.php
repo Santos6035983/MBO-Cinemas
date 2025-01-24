@@ -1,11 +1,19 @@
 <?php
-class Database {
-    private $host = 'localhost';
-    private $db_name = 'mbo_cinemas';
-    private $username = 'root';
-    private $password = '';
-    private $conn;
+abstract class AbstractDatabase {
+    protected $host = 'localhost';
+    protected $db_name = 'mbo_cinemas';
+    protected $username = 'root';
+    protected $password = '';
+    protected $conn;
 
+    abstract protected function connect();
+
+    public function sanitize($data) {
+        return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+    }
+}
+
+class Database extends AbstractDatabase {
     public function connect() {
         $this->conn = null;
 
@@ -36,7 +44,10 @@ class Database {
         }
         $stmt = $this->conn->prepare($query);
         $stmt->execute($conditions);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return array_map(function($row) {
+            return array_map([$this, 'sanitize'], $row);
+        }, $results);
     }
 
     public function update($table, $data, $conditions) {
