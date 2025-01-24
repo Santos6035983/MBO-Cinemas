@@ -1,27 +1,5 @@
-<!doctype html>
-<html lang="nl">
+<?php include 'lib\HeaderFooter\Header.php'; ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <title>Films - MBO Cinemas</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
-    <header>
-        <h1>MBO Cinemas</h1>
-        <nav>
-            <ul>
-                <li><a href="Home.php">Home</a></li>
-                <li><a href="Films.php">Films</a></li>
-                <li><a href="Contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section id="film-list">
             <h2>Volledige Filmlijst</h2>
@@ -62,9 +40,9 @@
             </article>
         </section>
     </main>
-    <footer>
-        <p>© 2024 MBO Cinemas. Alle rechten voorbehouden.</p>
-    </footer>
+    
+<?php include 'lib\HeaderFooter\Footer.php'; ?>
+
 </body>
 
 </html>
