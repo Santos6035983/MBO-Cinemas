@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
     <title>Register</title>
+    <script src="lib/js/formValidation.js"></script>
 </head>
 <body>
     <main>
