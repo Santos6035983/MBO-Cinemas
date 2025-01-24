@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="nl">
 
@@ -23,7 +25,7 @@
                     <li><a href="Reserveren.php">Reserveren</a></li>
                     <li><a href="Wenslijst.php">Wenslijst</a></li>
                     <li><a href="Profiel.php">Profiel</a></li>
-                    <li><a href="logout.php">Uitloggen</a></li>
+                    <li><a href="Logout.php">Uitloggen</a></li>
                 <?php else: ?>
                     <li><a href="Registreer.php">Registreer</a></li>
                     <li><a href="Login.php">Inloggen</a></li>
