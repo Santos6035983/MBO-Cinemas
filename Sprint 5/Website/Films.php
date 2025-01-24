@@ -4,10 +4,11 @@
         <section id="film-list">
             <h2>Volledige Filmlijst</h2>
             <article>
-                <img src="path/to/film4.jpg" alt="Film 4">
-                <h3>Film 4</h3>
-                <p>Beschrijving van Film 4.</p>
-            </article>
+            <img src="images\Films\Indiana Jones and the Dial of Destiny.png" alt="Indiana Jones and the Dial of Destiny">
+            <h3>Indiana Jones and the Dial of Destiny</h3>
+            <p>De man met de hoed keert terug voor een laatste avontuur.
+                Indiana Jones and the Dial of Destiny brengt Harrison Ford terug in zijn iconische rol als onze favoriete archeoloog op het scherm.</p>
+        </article>
             <article>
                 <img src="path/to/film5.jpg" alt="Film 5">
                 <h3>Film 5</h3>

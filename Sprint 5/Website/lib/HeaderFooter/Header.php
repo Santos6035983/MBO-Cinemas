@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!doctype html>
 <html lang="nl">
 
@@ -29,9 +25,12 @@ session_start();
                     <li><a href="Profiel.php">Profiel</a></li>
                     <li><a href="logout.php">Uitloggen</a></li>
                 <?php else: ?>
-                    <li><a href="lib\Database\Registreer.php">Registreer</a></li>
-                    <li><a href="lib\Database\Login.php">Inloggen</a></li>
+                    <li><a href="Registreer.php">Registreer</a></li>
+                    <li><a href="Login.php">Inloggen</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
     </header>
+</body>
+
+</html>

@@ -1,9 +1,7 @@
 <?php
 
-include 'lib\HeaderFooter\Header.php';
-
 session_start();
-require_once 'database.php';
+require_once 'lib/Database/Database.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $database = new Database();
@@ -29,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<?php include 'lib/HeaderFooter/Header.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,16 +36,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <form method="POST" action="login.php">
-        <label for="username">Username:</label>
+        <label for="username">Gebruikersnaam:</label>
         <input type="text" id="username" name="username" required>
         <br>
-        <label for="password">Password:</label>
+        <label for="password">Wachtwoord:</label>
         <input type="password" id="password" name="password" required>
         <br>
         <button type="submit">Login</button>
     </form>
 
-    <?php include 'lib\HeaderFooter\Footer.php'; ?>
+    <?php include 'lib/HeaderFooter/Footer.php'; ?>
     
 </body>
 </html>
