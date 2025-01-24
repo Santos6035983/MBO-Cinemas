@@ -4,24 +4,16 @@ require_once 'lib/Database/Database.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $database = new Database();
     $db = $database->connect();
-
-    $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $email = $_POST['email'];
-    $birthday = DateTime::createFromFormat('d-m-Y', $_POST['birthday'])->format('Y-m-d');
-
-    $query = 'INSERT INTO users (username, password, email, birthday) VALUES (:username, :password, :email, :birthday)';
-    $stmt = $db->prepare($query);
-    $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':password', $password);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':birthday', $birthday);
-
-    if ($stmt->execute()) {
-        header('Location: Login.php');
-        exit();
+    $data = [
+        'username' => $_POST['username'],
+        'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
+        'email' => $_POST['email'],
+        'birthday' => DateTime::createFromFormat('d-m-Y', $_POST['birthday'])->format('Y-m-d')
+    ];
+    if ($database->create('users', $data)) {
+        echo 'User successfully registered.';
     } else {
-        echo 'Er is een fout opgetreden bij het registreren.';
+        echo 'An error occurred while registering the user.';
     }
 }
 ?>

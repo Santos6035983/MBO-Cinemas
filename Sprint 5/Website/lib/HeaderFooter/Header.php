@@ -26,6 +26,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <li><a href="Films.php">Films</a></li>
                 <li><a href="Contact.php">Contact</a></li>
                 <?php if (isset($_SESSION['user_id'])): ?>
+                    <li><a href="Feedback.php">Feedback</a></li>
                     <li><a href="Reserveren.php">Reserveren</a></li>
                     <li><a href="Wenslijst.php">Wenslijst</a></li>
                     <li><a href="Profiel.php">Profiel</a></li>
